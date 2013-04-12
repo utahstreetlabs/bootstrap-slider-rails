@@ -70,7 +70,7 @@
 		this.max = this.element.data('slider-max')||options.max;
 		this.step = this.element.data('slider-step')||options.step;
 		this.value = this.element.data('slider-value')||options.value;
-		if (this.value[1]) {
+		if ($.isArray(this.value)) {
 			this.range = true;
 		}
 

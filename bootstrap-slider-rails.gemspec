@@ -2,7 +2,9 @@
 # project in your rails apps through git.
 Gem::Specification.new do |s|
   s.name = "bootstrap-slider-rails"
-  s.version = "2.0.0"
+  # not quite semver - the first 3 digits track the version of the library as forked from
+  # http://www.eyecon.ro/bootstrap-slider/, but the 4th digit tracks the USL patches.
+  s.version = "2.0.0.1"
   s.authors     = ["Brian Moseley", "Utah Street Labs"]
   s.email       = ["bcm@copious.com"]
   s.homepage    = "http://github.com/utahstreetlabs/bootstrap-slider-rails"
