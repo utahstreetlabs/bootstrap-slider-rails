@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+rvm gemset use --create bootstrap-slider-rails
