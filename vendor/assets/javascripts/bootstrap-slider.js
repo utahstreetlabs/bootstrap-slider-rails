@@ -212,6 +212,7 @@
 			}
 
 			this.percentage[this.dragged] = percentage;
+			var val = this.calculateValue();
 			this.layout();
 
 			if (this.touchCapable) {
@@ -228,7 +229,6 @@
 			}
 
 			this.inDrag = true;
-			var val = this.calculateValue();
 			this.element.trigger({
 					type: 'slideStart',
 					value: val
@@ -257,8 +257,8 @@
 				}
 			}
 			this.percentage[this.dragged] = percentage;
-			this.layout();
 			var val = this.calculateValue();
+			this.layout();
 			this.element
 				.trigger({
 					type: 'slide',
